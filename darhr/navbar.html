@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>website</title>
+	<style type="text/css">
+		body
+		{
+			padding: 0px;
+			margin: 0px;
+
+		}
+		#navbar
+		{
+			height: 200px;
+			widows: 100%;
+			background:white;
+			display: flex;
+			justify-content: space-between;
+    		align-items: center;
+		}
+		.left
+		{
+			padding: 20px;
+		}
+		.mid
+
+		{
+			word-spacing: 150px;
+			
+
+		}
+
+		.mid a
+
+		{
+			color: black;
+			text-decoration: none;
+			font-weight: bold ;
+     		font-size: 20px; 
+
+
+		}
+		.mid a:hover
+		{
+			color: tomato;
+			transition: 1s;
+		}
+		.right
+		{
+			padding: 20px;
+			
+			
+		}
+		/*.right button
+		{
+			height: 40px;
+			width:100px;
+			font-family: sans-serif;
+			background:red;
+		    border-radius: 20px;
+			
+		}
+		.right button:hover
+		{
+			color: #ffff;
+			background:#FF1D67;
+			
+		}*/
+		#herosection
+		{
+			height: 500px;
+			width: 100%;
+			background-image: url(1.jpg);
+			background-repeat:no-repeat;
+			background-size:cover ;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.search
+		{
+/*			background: tomato;*/
+			height: 100px;
+			width:900px ;
+		}
+		.search button
+		{
+			height: 50px;
+			width:170px;
+		   background: #FF1D67;
+		   color: #fff;
+		   font-size: 20px;
+		  
+
+		}
+		.search input
+		{
+			height: 20px;
+			width:330px;
+/*		   background: lightseagreen;*/
+		  
+
+		}
+
+		.sectionright
+		{
+	        height: 400px;
+			width: 48%;
+			display: flex;
+			justify-content: flex-end;
+			padding: 100px;
+			
+
+		}
+		.sectionleft
+		{
+			height: 300px;
+			width: 48%;
+			padding: 100px;
+			font-size:90px;	
+			color:darkkhaki;
+			font-family:roboto,sans-serif;
+
+
+		}
+		#title
+		{
+			
+			height: 100px;
+			width: 100%;
+			box-sizing: border-box;
+			padding-top: 100px;
+			color: red;
+		}
+		#categories
+		{
+			
+			height: 200px;
+			width: 100%;
+			box-sizing: border-box;
+			padding-top: 50px;
+			color: darkblue;
+			font-size: 60px;
+		} 
+
+		.categoriesbutton button
+		{
+			width: 250px;
+			height: 60px;
+			background: #ffff;
+			color: #5844AC;
+			font-weight:bold ;
+			border-radius: 10px;
+		}
+		.categoriesbutton button:hover
+		{
+			color: #ffff;
+			background: #9592ff;
+		}
+		#content
+		{
+			
+			height: 200px;
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			padding-top:10px ;
+			box-sizing: border-box;		
+		}
+		.content1
+		{
+			background:white;
+			box-shadow: black 0px 0px  7px 1px;
+			display: flex;
+			justify-content: space-evenly;
+			height: 200px;
+			width: 250px;
+			padding-top:180px ;
+			box-sizing: border-box;	
+		}
+
+		#content2
+		{
+			
+			height: 200px;
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			padding-top:10px ;
+			box-sizing: border-box;		
+		}
+		.content3
+		{
+			background:white;
+			box-shadow: black 0px 0px  7px 1px;
+			display: flex;
+			justify-content: space-evenly;
+			height: 200px;
+			width: 250px;
+			padding-top:180px ;
+			box-sizing: border-box;	
+		}
+		.right button
+		{
+			background: #FF1D67;
+			color: #ffff;
+			height:50px ;
+			width: 200px;
+			
+		}
+		.right button:hover
+		{
+			color: #ffff;
+			background:#0900d7;
+			transition: 1s;
+
+		}
+		#mainbox
+		{
+			background:lightblue;
+			height: 100px;
+			width: 100%;
+			
+		}
+		.tour
+		{
+			height: 90px;
+			width: 100%;
+			background: lightblue;
+			text-align: center;
+			box-sizing: border-box;
+			padding-top: 50px;
+			color: #Fb246a;
+			font-family: sans-serif;
+
+		}
+		.maintitle
+		{
+			height: 270px;
+			width: 100%;
+			background: lightblue;
+			text-align: center;
+			box-sizing: border-box;
+			padding-top: 50px;
+		    font-size:45px ;
+		    color: #28395a;
+		    font-family: sans-serif;
+
+		}
+		.button button
+		{   
+			width: 190px;
+			height: 50px;
+		  background:#ffff;
+		  color: #9592ff;
+		  border-radius: 5px;
+
+
+		}
+		.button button:hover
+		{
+			color: #ffff;
+			background: #9592ff;
+		}
+
+		#mainbox2
+		{    
+			
+			height: 150px;
+			width: 100%;
+			text-align: center;
+			box-sizing: border-box;
+			padding-top: 120px;
+			font-size: 20px;
+		}
+
+
+
+
+		#marketing1
+		{
+			height: 150px;
+			width: 100%;
+			background:white;
+			display: flex;
+			padding-top: 20px;
+			box-sizing: border-box;
+		}
+
+		#marketing1:hover
+
+			{
+                background:whitesmoke;
+
+			}
+
+		.marketingleft
+
+		{
+			padding: 10px;
+		}
+
+
+		.marketingmid
+		{
+           
+         height: 140px;
+         width: 1000%;
+         word-spacing: 100px;
+          
+		}
+
+		.marketingright 
+
+		{
+		  width: 100%;
+		  height: 80px;		  	  		   	
+		}
+
+		/*.marketingright button
+
+
+		{
+			background: lightseagreen;
+			height: 65px;
+			width: 100px;
+			padding-left: 75px;
+			padding-right: 85px;
+			border-radius: 20px;
+		}*/
+
+		#marketing2
+		{
+			height: 150px;
+			width: 100%;
+			background:white;
+			display: flex;
+			padding-top: 20px;
+			box-sizing: border-box;
+		}
+
+		
+		#marketing2:hover
+
+			{
+                background:whitesmoke;
+
+			}
+
+		.marketingleft
+
+		{
+			padding: 10px;
+		}
+
+
+		.marketingmid
+		{
+           
+         height: 140px;
+         width: 1000%;
+         word-spacing: 100px;
+          
+		}
+
+		.marketingright 
+
+		{
+		  width: 100%;
+		  height: 100px;		  	  		   	
+		}
+
+		/*.marketingright button
+
+
+		{
+			background: lightseagreen;
+			height: 65px;
+			width: 100px;
+			padding-left: 75px;
+			padding-right: 85px;
+			border-radius: 20px;
+		}
+*/
+        #marketing3
+		{
+			height: 150px;
+			width: 100%;
+			background:white;
+			display: flex;
+			padding-top: 20px;
+			box-sizing: border-box;
+		}
+
+		
+		#marketing3:hover
+			{
+                background:whitesmoke;
+
+			}
+
+		.marketingleft
+
+		{
+			padding: 10px;
+		}
+
+
+		.marketingmid
+		{
+           
+         height: 140px;
+         width: 1000%;
+         word-spacing: 100px;
+          
+		}
+
+		.marketingright 
+
+		{
+		  width: 100%;
+		  height: 80px;		  	  		   	
+		}
+
+	/*	.marketingright button
+
+
+		{
+			background: lightseagreen;
+			height: 65px;
+			width: 100px;
+			padding-left: 75px;
+			padding-right: 85px;
+			border-radius: 20px;
+		}*/
+		.time
+		{
+			height: 40px;
+			width: 130px;
+/*			background: red;*/
+			padding-top: 25px;
+			font-size: 20px;
+			font-family: sans-serif;
+			
+		}
+
+
+        #marketing4
+		{
+			height: 150px;
+			width: 100%;
+			background:white;
+			display: flex;
+			padding-top: 20px;
+			box-sizing: border-box;
+		}
+
+		
+	     #marketing4:hover
+			{
+                background:whitesmoke;
+
+			}
+
+		.marketingleft
+
+		{
+			padding: 10px;
+		}
+
+
+		.marketingmid
+		{
+           
+         height: 140px;
+         width: 1000%;
+         word-spacing: 100px;
+          
+		}
+
+		.marketingright 
+
+		{
+		  width: 100%;
+		  height: 80px;	
+		  color:#494b51;
+		  font-size: 20px;
+
+
+		  	  	  		   	
+		}
+
+	     .time
+		{
+			height: 40px;
+			width: 130px;
+/*			background: red;*/
+			padding-top: 25px;
+			font-size: 20px;
+			font-family: sans-serif;
+			
+
+		}
+
+
+		.marketingright button
+
+
+		{
+			background:#ffff;
+			height: 65px;
+			width: 200px;
+			padding-left: 50px;
+			padding-right: 50px;
+			border-radius: 20px;
+			border: #9592ff solid 2px;
+			font-size: 20px;
+		}
+		.marketingright button:hover
+		{
+			color: #ffff;
+			background: #9592ff;
+		}
+		#ygy
+		{
+			width: 100%;
+			height: 300px;
+/*			background:red;*/
+		}
+		.emyte
+		{
+			width: 100%;
+			height: 100px;
+			background-color:darkblue;
+		}
+		.Apply-Process
+		{
+			width: 100%;
+			height: 50px;
+			background-color:darkblue;
+			color: #ff00a6;
+			text-align: center;
+			font-size: 20px;
+		}
+		
+		
+		.How-it-works
+		{
+			width: 100%;
+			height: 100px;
+			background-color:darkblue;
+			font-size: 50px;
+			text-align: center;
+			color: #fff;
+		}
+		#nbn
+		{
+			width: 100%;
+			height: 300px;
+			background:darkblue;
+			align-content: center;
+			display: flex;
+			justify-content: SPACE-evenly;
+			
+		}
+		.Apply-for-job
+		{
+			width: 20%;
+			height: 290px;
+			background-color: blue;
+			text-align: center;
+			box-sizing: border-box;
+			padding-top: 90px;
+			font-size: 20px;
+			color:#B7B7B7;
+			font-family:sans-serif ;
+		}
+		.Apply-for-job:hover
+		{
+			background-color: #1005e6;
+		}
+		.a
+		{
+/*			background: red;*/
+			height: 50px;
+			width: 300px;			
+			text-align: center;
+			font-size: 34px;
+			color: white;
+		}
+		
+		.for
+		{
+/*			background: red;*/
+			height: 50px;
+			width: 300px;			
+			text-align: center;
+			font-size: 34px;
+			color: white;
+		}
+		.your
+		{
+/*			background: red;*/
+			height: 50px;
+			width: 300px;			
+			text-align: center;
+			font-size: 34px;
+			color: white;
+		}
+		#image
+		{
+/*			background: lightblue;*/
+			width: 100%;
+			height: 140px;
+		}
+		.name
+		{
+/*			background: yellow;*/
+			height: 40px;
+			width: 100%;
+			align-items: center;
+			font-size: 27px;
+		}
+		.creativeDirector
+		{
+/*			background: red;*/
+			height: 50px;
+			width: 100%;
+			text-align: center;
+			color:#4b4b4b;
+		}
+		.intro
+		{
+/*			background: blue;*/
+			width: 100%;
+			height: 150px;
+			color: #808080;
+			text-align: center;
+			font-size: 16px;
+			font-family: sans-serif;
+			font-weight:bold;
+
+		}
+		#main 
+		{
+			height:700px;
+			width: 100%;
+/*			background: lightpink;*/
+			display: flex;
+			;
+		}
+		.left1
+		{
+/*			background: red;*/
+			width: 40%;
+			height: 500px;
+		}
+		.WHATWEAREDOING
+		{
+/*			background: lightblue;*/
+			height: 100px;
+			width: 500px;
+			color: red;
+			padding-top: 60px;
+			padding-left: 300px;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-family:"Roboto flex",sans-serif;
+		}
+		.TalentedPeople
+		{
+/*			background: yellowgreen;*/
+			height: 130px;
+			width: 1000px;
+			font-size: 50px;
+			font-family: "roboto",sans-serif;
+			color: #28395A;
+			box-sizing: border-box;
+			padding-left: 300px;
+		}
+		.mainword
+		{
+			height: 100px;
+			width: 1000px;
+/*			background: firebrick;*/
+			color: #0b0b2b;
+			box-sizing: border-box;
+			padding-left: 300px;
+			font-size: 17px;
+			font-family: "muli",sans-serif;
+
+		}
+		.mainword1
+		{
+			height: 100px;
+			width: 1000px;
+/*			background: gray;*/
+			color: #506172;
+			box-sizing: border-box;
+			padding-left: 300px;
+			font-size: 16px;
+			font-family: "muli",sans-serif;
+
+		}
+		.right1
+		{
+/*			background: yellow;*/
+			height: 500px;
+			width: 50%;
+		}
+		/*.since
+		{
+			background: blue;
+			height: 100px;
+			width: 100px;
+			display: flex;
+			margin-right: 390px;
+			box-sizing: border-box;
+		}*/
+		#con 
+		{
+			height: 600px;
+			width: 100%;
+			background: rgb(250, 244, 244);
+			display:flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		.midleftcon
+		{
+			/* background: tomato; */
+			width: 14%;
+			height: 400px;
+			
+			box-sizing: border-box;
+			
+
+
+		}
+		.midrightcon
+		{
+			/* background: saddlebrown; */
+			width: 30%;
+			height: 500px;
+			box-shadow: black 2px 2px 10px 1px;
+			background-color: #ffffff;
+
+		}
+		.leftconmt
+		{
+			/* background-color: #9592ff; */
+			height: 500px;
+			width: 30%;
+			box-shadow: black 2px 2px 10px 1px;
+			background-color: #ffffff;
+
+
+		}
+		.rightconmt
+		{
+			/* background-color: #0000ff; */
+			height: 400px;
+			width: 14%;
+		}
+		.photo
+		{   height: 60px;
+			width: 500px;
+			padding-top: 25px;
+			box-sizing: border-box;
+			/* background-color: red; */
+			padding-left: 35px;
+			font-size: 18px;
+			font-family:"inter",sans-serif;
+			color: #181d23;
+		}
+		.photo1
+		{   height: 60px;
+			width: 500px;
+			padding-top: 25px;
+			box-sizing: border-box;
+			/* background-color: red; */
+			padding-left: 35px;
+			font-size: 18px;
+			font-family:"inter",sans-serif;
+			color: #181d23;
+		}
+		.readmore
+		{
+			height: 15px;
+			width: 200px;
+			/* background-color: red; */
+			color:#808080;
+			font-size: 17px;
+			font-family: "montserrat",sans-serif;
+			padding-left: 35px;
+		}
+		.readmore1
+		{
+			height: 15px;
+			width: 200px;
+			/* background-color: red; */
+			color:#808080;
+			font-size: 17px;
+			font-family: "montserrat",sans-serif;
+			padding-left: 35px;
+		}
+		.conbon
+		{
+			height: 70px;
+			width: 200px;
+			/* background-color: red; */
+			padding: 15px;
+			box-sizing: border-box;
+			padding-left: 35px;
+
+		}
+		.conbon1
+		{
+			height: 70px;
+			width: 200px;
+			/* background-color: red; */
+			padding: 15px;
+			box-sizing: border-box;
+			padding-left: 35px;
+		}
+		.conbon button
+		{
+			background-color: #ff1d1d;
+			color: #FFFFFF;
+			height: 60px;
+			width: 90px;
+		}
+		.conbon1 button
+		{
+			background-color: #ff1d1d;
+			color: #FFFFFF;
+			height: 60px;
+			width: 90px;
+		}
+		#last
+		{
+			height: 500px;
+			width: 100%;
+			background-color: #03062b;
+		}
+		
+		
+		.section1
+		{
+			/* background-color: #9592ff; */
+			height: 100px;
+			width: 100%;
+		}
+		.in
+		{
+			height: 300px;
+			width: 100%;
+			/* background-color: brown; */
+			display: flex;
+			justify-content: space-evenly;
+         
+		}
+		.aboutus
+		{
+			height:300px;
+			width: 22%;
+			/* background-color: #065cb3; */
+		}
+		.CONTACTINFO
+		{
+			height: 300px;
+			width: 22%;
+			/* background-color: #718599; */
+		}
+		.IMPORTANTLINK
+		{
+			height: 300px;
+			width: 20%;
+			/* background-color: #35c998; */
+		}
+		.NEWSLETTER
+		{
+			height: 300px;
+			width: 20%;
+			/* background-color: #506172; */
+		}
+		.footer
+		{
+			height: 100px;
+			width: 100%;
+			/* background-color: yellow; */
+		}
+		.us
+
+		{
+              height: 80px;
+			  width: 200px;
+			  /* background-color: red; */
+			  color: #ffffff;
+			  text-align: center;
+			  padding-top: 50px;
+			  box-sizing: border-box;
+			  font-size: 20px;
+			  font-family:"roboto",sans-serif;
+		}
+		.We
+		{
+			  height: 100px;
+			  width: 400px;
+			  /* background-color: rgb(99, 61, 124); */
+			  color: #999999;			
+			  padding-left: 50px;
+			  box-sizing: border-box;
+			  font-size: 16px;
+			  font-family:"montserrat",sans-serif;
+		}
+		.INFO
+		
+		{
+			height: 80px;
+			  width: 200px;
+			  /* background-color: red; */
+			  color: #ffffff;
+			  text-align: center;
+			  padding-top: 50px;
+			  box-sizing: border-box;
+			  font-size: 20px;
+			  font-family:"roboto",sans-serif;
+		}
+		.INF
+		{
+			  height: 100px;
+			  width: 500px;
+			  /* background-color: rgb(205, 130, 255); */
+			  color: #999999;			
+			  padding-left:20px;
+			  box-sizing: border-box;
+			  font-size: 16px;
+			  font-family:"montserrat",sans-serif;
+		}
+		.phone
+		{
+			height: 30px;
+			width: 190px;
+			color: #909099;
+			/* background-color: gainsboro; */
+		}
+		.phone:hover
+		{
+			color: red;
+		}
+		.email:hover
+		{
+			color: red;
+		}
+		.email
+		{
+			height: 30px;
+			width: 190px;
+			/* background-color: rgb(224, 137, 137); */
+			color: #909099;
+		}
+		.LINK
+		{
+			
+			height: 80px;
+			  width: 300px;
+			  /* background-color: red; */
+			  color: #ffffff;			
+			  padding-top: 50px;
+			  padding-left: 40px;
+			  box-sizing: border-box;
+			  font-size: 20px;
+			  font-family:"roboto",sans-serif;
+			  
+
+		}
+		.LINK1
+		{
+			height: 100px;
+			  width: 500px;
+			  /* background-color: rgb(30, 21, 36); */
+			  color: #999999;			
+			  padding-left:40px;
+			  box-sizing: border-box;
+			  font-size: 16px;
+			  font-family:"montserrat",sans-serif;
+			  
+		}
+		.LINK1 a
+		{
+			text-decoration: none;
+			color: #999999;
+		}
+		.LETTER
+		{
+			 height: 80px;
+			  width: 200px;
+			  /* background-color: red; */
+			  color: #ffffff;
+			  text-align: center;
+			  padding-top: 50px;
+			  box-sizing: border-box;
+			  font-size: 20px;
+			  font-family:"roboto",sans-serif;
+		}
+		.new 
+		{
+			 height: 40px;
+			  width: 300px;
+			  /* background-color: rgb(205, 130, 255); */
+			  color: #999999;			
+			  padding-left:20px;
+			  box-sizing: border-box;
+			  font-size: 16px;
+			  font-family:"montserrat",sans-serif;
+		}
+		.input input
+		{
+			height: 20px;
+			width: 250px;
+			background-color: white;
+		}
+		.Copyright
+		{
+			height: 100px;
+			width: 1500px;
+			/* background-color: white; */
+			text-align: center;
+			color: #969696;
+			font-size: 16px;
+			font-family: "roboto",sans-serif;
+			box-sizing: border-box;
+			padding-top: 20px;
+		}
+					
+		
+
+		
+ 
+
+	
+			
+
+
+
+
+	</style>
+	
+</head>
+
+<body>
+	<div id="navbar">
+		<div class="left">
+			<img src="Logo.jpg" height="150px" width="200px">
+		</div>
+		<div class="mid">
+
+			<a href="#">Home</a>
+			<a href="#">Find-job</a>
+			<a href="#">About</a>
+			<a href="#">Page</a>
+			<a href="#">Contact</a>
+
+		</div>
+
+		<div class="right">
+			<button>Register</button>
+			<button>Login</button>
+		</div>	
+			
+	</div>
+
+
+	<div id="herosection"> 
+		<div class="sectionleft">
+        <i><b>Find the most<br> exciting startup jobs</b></i>
+
+        <div class="search">
+        <input type="text" name="text">
+         <input type="text" name="text">
+         <button>Find-job</button>
+        </div>
+
+		</div>
+
+
+		<div class="sectionright">
+			<img src="man.png" height="450px" width="70%">
+		</div>
+	</div>
+	<div id="title">
+		<center>FETURED TOURS PACKAGES </center>
+	</div>
+	<div id="categories">
+		<center>Browse Top categories</center>
+	</div>
+
+
+	<div id="content">
+		
+		<div class="content1">
+			Design & Creative
+		</div>
+		<div class="content1">
+			Design & Devlopment
+		</div>
+		<div class="content1">
+			seles & marketing 
+		</div>
+		<div class="content1">
+			mobile Application
+		</div>		            
+	</div>
+<br>
+
+	<div id="content2">		
+		<div class="content3">
+			Design & Creative
+		</div>
+
+		<div class="content3">
+			Design & Devlopment
+		</div>
+
+		<div class="content3">
+			seles & marketing 
+		</div>
+
+		<div class="content3">
+			mobile Application
+		</div>		            
+	</div>
+
+<br><br><br><br>
+<div class="categoriesbutton">
+	<center><button> BROWSE ALL SECTOR</button></center>
+</div>
+
+<br><br><br>
+
+	<div id="mainbox">
+		<div class="tour">FEATURE TOURES PACKAGES</div>
+		<div class="maintitle">Make a Difference With Your <br>Online Resume! 
+	
+		<div class="button">		
+			<center><button>UPLOAD YOUR CV</button></center>		
+	</div>
+</div>
+</div>
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br><br><br><br>
+
+<br><br><br>
+	<div id="mainbox2">
+		<font color="red">RECENT JOB</font><br><br>
+		<b><h1><font color="black">Feature Jobs</font></h1></b>
+	</div>
+<br><br><br><br><br><br><br>
+
+	<div id="marketing1">
+
+		<div class="marketingleft">
+			<img src="logo1.jpg"height="100px" width="100px">
+		</div>
+
+		<div class="marketingmid">
+			<h1>DigitalMarketer</h1>
+			
+			CreativeAgency    Athens,Greece    $3500-$4000
+		</div>
+
+		<div class="marketingright">
+			<button>Full time</button><br>
+
+			<div class="time">
+			<center>7:00 Hour Ago</center>
+		   </div>
+			
+		</div>
+
+	</div>
+
+	<div id="marketing2">
+
+		<div class="marketingleft">
+			<img src="logo2.png"height="100px" width="100px">
+		</div>
+
+		<div class="marketingmid">
+			<h1>DigitalMarketer</h1>
+			
+			CreativeAgency    Athens,Greece    $3500-$4000
+		</div>
+
+		<div class="marketingright">
+			<button>Full time</button>
+			<div class="time">
+			<center>7:00 Hour Ago</center>
+		   </div>
+			
+			
+		</div>
+
+	</div>
+
+	<div id="marketing3">
+
+		<div class="marketingleft">
+			<img src="logo3.jpg"height="100px" width="100px">
+		</div>
+
+		<div class="marketingmid">
+			<h1>DigitalMarketer</h1>
+			
+			CreativeAgency    Athens,Greece    $3500-$4000
+		</div>
+
+		<div class="marketingright">
+			<button>Full time</button>
+			<div class="time">
+			<center>7:00 Hour Ago</center>
+		   </div>
+			
+			
+		</div>
+
+	</div>
+
+
+<div id="marketing4">
+
+		<div class="marketingleft">
+			<img src="logo4.png"height="100px" width="100px">
+		</div>
+
+		<div class="marketingmid">
+			<h1>DigitalMarketer</h1>
+			
+			CreativeAgency    Athens,Greece    $3500-$4000
+		</div>
+
+		<div class="marketingright">
+			<button>Full time</button>
+			<div class="time">
+			<center>7:00 Hour Ago</center>
+		   </div>
+			
+			
+		</div>
+
+	</div>
+
+	<div id="ygy">
+		<div class="emyte">
+		</div>
+		<div class="Apply-Process">Apply Process</div>
+		<div class="How-it-works">How it works</div>
+         
+         <div id="nbn">
+		<div class="Apply-for-job">
+			<div class="a">
+			1. Search a job
+		     </div>
+			Sorem spsum dolor sit amsectetur<br> adipisclit, seddo eiusmod tempor<br> incididunt ut laborea.
+			
+		</div>
+		<div class="Apply-for-job">
+			<div class="for">
+			2. Apply for job
+		     </div>
+            Sorem spsum dolor sit amsectetur<br> adipisclit, seddo eiusmod tempor<br> incididunt ut laborea.			
+		</div>
+		<div class="Apply-for-job">
+			<div class="your">
+			3. Get your job
+		     </div>
+             Sorem spsum dolor sit amsectetur<br> adipisclit, seddo eiusmod tempor<br> incididunt ut laborea.			
+		</div>
+	</div>
+	</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<div id="image">
+		<div class="image1">
+		<center><img src="manlogo.png"></center>
+		</div>
+	</div>
+	<div class="name">
+		<center>Margret Lawson</center>
+	</div>
+	<div class="creativeDirector">
+		creative Director
+	</div>
+
+	<div class="intro">
+		<div class="intro1">
+		<i>"I am at an age where I just want to be fit and healthy our bodies<br>
+		are our responsibility ! So start caring for your body and it will<br>
+		care for youu.Eat clean it will care for you and workout hard."</i>
+	</div>
+	</div>
+
+	<div id="main">
+		<div class="left1">
+
+
+		<div class="WHATWEAREDOING">
+			WHAT WE ARE DOING
+		</div>
+		<div class="TalentedPeople">
+			24K Talented People are<br>
+             getting Jobs
+		</div>
+		<div class="mainword">
+			Mollit anim laborum duis au dolor in voluptate velit ess<br> 
+			cillum dolore eu lore dsu quality mollit anim laborumuis<br> 
+			au dolor in voluptate velit cillum.
+
+
+<br><br><br><br>	
+
+
+		</div>
+		<div class="mainword1">
+			Mollit anim laborum.Duis aute irufg dhjkolohr in re voluptate velit<br>
+			esscillumlore eu quife nrulla parihatur. Excghcepteur signjnt occa cupidatat<br>
+			 non inulpadeserunt mollit aboru. temnthp incididbnt ut labore mollit anim<br>
+			  laborum suis aute.
+			</div>
+		</div>
+
+
+		<div class="right1">
+
+			  <div class="model">
+		<center><img src="model.webp"height=590px><center>
+
+			<!-- <div class="since">
+				Since 1984
+               </div>	 -->
+
+</div>					
+	</div>
+</div>
+
+<div id="con"> 
+
+	<div class="midleftcon">
+
+	</div>
+
+
+
+
+	<div class="midrightcon">
+
+		<img src="home.webp">
+
+		<div class="photo">
+			Footprintes in Times is perfect House in Kurashiki
+		</div>
+
+		<div class="readmore">
+			Read  more>>
+		</div>
+
+		<div class="conbon1">
+			<button>24 Now</button>
+
+		</div>
+
+	</div>
+
+
+
+
+	<div class="leftconmt">
+		<img src="home2.webp">
+
+		<div class="photo1">
+			Footprintes in Times is perfect House in Kurashiki
+		</div>
+
+		<div class="readmore1">
+			Read  more>>
+		</div>
+
+		<div class="conbon">
+			<button>24 Now</button>
+		</div>
+	</div>
+	<div class="rightconmt">	
+	</div>			
+</div>
+
+<div id="last">
+
+	<div class="section1"></div>
+	
+	<div class="in">
+
+		
+		<div class="aboutus">
+
+			<div class="us">
+				ABOUT US
+			</div>
+
+			<div class="We">
+				We are the recuritment firm that ensures the job <br>is the key of
+				journey.
+			</div>
+		
+		</div>
+		
+		
+		<div class="CONTACTINFO">
+
+			<div class="INFO">
+				CONTACT INFO
+			</div>
+
+			<div class="INF">
+				Address :210, Sonal Amit Shopping Center, Station Road, above<br>
+				 Top10, Nalasopara West, Mumbai, Maharashtra 401203
+			</div>
+
+			<div class="phone">
+				Phone : 9673191193				
+			</div>
+
+			<div class="email">
+				Email : Jobs@darhr.in		
+			</div>
+	
+		</div>
+		
+		
+		<div class="IMPORTANTLINK">
+
+			<div class="LINK">
+				IMPORTANT LINK
+			</div>
+
+
+			<div class="LINK1">
+				<a href="project">Project</a><br>
+                <a href="us">Us</a><br>
+                <a href="Testimonial">Testimonial</a><br>
+                <a href="proparties">Proparties</a><br>
+                <a href="support">Support</a><br>
+			</div>
+					
+		</div>
+		
+		
+		<div class="NEWSLETTER">
+
+			<div class="LETTER">
+				NEWSLETTER
+			</div>
+
+			<div class="new">
+				Join the journey, to dar hr 
+			</div>
+
+			<div class="input">
+				<input type="email" name="e1" placeholder="Enter email"> 
+			</div>
+						
+		</div>
+		
+	</div>
+
+   <hr color="white" width="80%" size="1px">
+
+	<div class="footer">
+
+		<div class="Copyright">
+			Copyright ©2023 All rights reserved
+		</div>
+
+	</div>
+</div>
+	
+	
+
+
+
+
+
+
+
+
+
+</body>
+</html>
